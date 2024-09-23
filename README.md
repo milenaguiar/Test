@@ -1,4 +1,4 @@
-#Projeto
+# Projeto
 
 Este projeto foi gerado com a versão 12.0.2 do Angular CLI.
 
@@ -10,19 +10,19 @@ Execute ng serve para um servidor de desenvolvimento. Navegue até http://localh
 
 Execute ng generate component nome-do-componente para gerar um novo componente. Você também pode usar ng generate directive|pipe|service|class|guard|interface|enum|module.
 
-Compilação
+## Compilação
 
 Execute ng build para compilar o projeto. Os artefatos da compilação serão armazenados no diretório dist/.
 
-Execução de testes unitários
+## Execução de testes unitários
 
 Execute ng test para executar os testes unitários via Karma.
 
-Execução de testes end-to-end
+## Execução de testes end-to-end
 
 Execute ng e2e para executar os testes end-to-end por meio de uma plataforma de sua escolha. Para usar este comando, você precisa primeiro adicionar um pacote que implemente as capacidades de teste end-to-end.
 
-Ajuda adicional
+## Ajuda adicional
 
 Para obter mais ajuda sobre o Angular CLI, use ng help ou confira a página Visão Geral do Angular CLI e Referência de Comandos.
 
