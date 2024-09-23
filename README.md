@@ -2,6 +2,10 @@
 
 Este projeto foi gerado com a versão 12.0.2 do Angular CLI.
 
+## Pré-requisitos 
+
+Node.js: Certifique-se de ter o Node.js instalado. Você pode baixá-lo aqui. A versão recomendada deve ser a LTS.
+
 ## Servidor de desenvolvimento
 
 Execute ng serve para um servidor de desenvolvimento. Navegue até http://localhost:4200/. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
