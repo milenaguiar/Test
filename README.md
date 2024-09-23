@@ -14,8 +14,7 @@ Execute npm install para instalar todas as dependências.
 
 ## Servidor de desenvolvimento
 
-Execute ng serve para um servidor de desenvolvimento. Navegue até http://localhost:4200/. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
-
+Execute ng serve para um servidor de desenvolvimento. Navegue até http://localhost:4200/. 
 ## 
 
 
