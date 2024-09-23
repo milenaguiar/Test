@@ -1,0 +1,45 @@
+<div class="container">
+  <h2 class="title">Registro</h2>
+<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+  <div  class="form-group">
+    <label for="numeroConta">Número da Conta:</label>
+    <input id="numeroConta" class="form-control" formControlName="numeroConta"/>
+    <div [ngClass]="getClass('numeroConta')">{{ getErrorMessage('numeroConta') }}</div>
+    <div *ngIf="cadastroForm.get('numeroConta')?.errors?.pattern">Insira um número de conta válido</div>
+  </div>
+  <div class="form-group">
+    <label for="nome">Nome do Titular:</label>
+    <input id="nome" class="form-control" formControlName="nome"/>
+    <div [ngClass]="getClass('nome')">{{getErrorMessage('nome')}}</div>
+    <div *ngIf="cadastroForm.get('nome')?.errors?.pattern"></div>
+  </div>
+  <div class="form-group">
+    <label for="documento">Documento (CPF):</label>
+    <input id="documento" class="form-control" formControlName="documento"/>
+    <div [ngClass]="getClass('documento')">{{getErrorMessage('documento')}}</div>
+    <div *ngIf="cadastroForm.get('documento')?.errors?.pattern"></div>
+  </div>
+  <div>
+    <label for="dataDeNascimento">Data de Nascimento:</label>
+    <input id="dataDeNascimento" class="form-control" formControlName="dataDeNascimento"/>
+    <div [ngClass]="getClass('dataDeNascimento')">{{getErrorMessage('dataDeNascimento')}}</div>
+    <div *ngIf="cadastroForm.get('dataDeNascimento')?.errors?.pattern"></div>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" class="form-control" formControlName="email"/>
+    <div [ngClass]="getClass('email')">{{getErrorMessage('email')}}</div>
+  </div>
+  <div>
+    <label for="telefone">Telefone:</label>
+    <input id="telefone" class="form-control" formControlName="telefone"/>
+    <div [ngClass]="getClass('telefone')">{{getErrorMessage('telefone')}}</div>
+  </div>
+  <div>
+    <label for="endereco">CEP:</label>
+    <input id="endereco" class="form-control" formControlName="endereco"/>
+    <div [ngClass]="getClass('endereco')">{{getErrorMessage('endereco')}}</div>
+  </div>
+  <button class="btn btn-primary" type="submit"[disabled]="cadastroForm.invalid" >Cadastrar Conta</button>
+</form>
+

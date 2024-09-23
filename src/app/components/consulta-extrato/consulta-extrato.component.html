@@ -1,0 +1,26 @@
+<div class="container">
+  <div>
+    <h2 class="title">Consulta de Extrato</h2>
+    <form [formGroup]="extratoForm" (ngSubmit)="consultarExtrato()">
+      <div>
+        <label for="numeroConta">Número da Conta:</label>
+        <input id="numeroConta" class="form-control" [(ngModel)]="numeroConta" name="numeroConta" formControlName="numeroConta" />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="extratoForm.invalid">Consultar Extrato</button>
+    </form>
+    <div *ngIf="extrato">
+      <h3>Extrato da Conta: {{ extrato.numeroConta }}</h3>
+      <ul>
+        <li *ngFor="let transacao of extrato.transacoes">
+          {{ transacao.data }} - {{ transacao.descricao }} - R$ {{ transacao.valor | number:'1.2-2' }}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="!extrato && buscaRealizada">
+    <p>Extrato não encontrado  {{ numeroConta }}.</p>
+  </div>
+    <div *ngIf="extratoForm.get('numeroConta')?.errors?.required
+    && extratoForm.get('numeroConta')?.touched"
+    class="alert alert-danger">O número da conta é obrigatório.</div>
+  </div>
+</div>

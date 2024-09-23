@@ -1,0 +1,19 @@
+{
+  "extratos": [
+    {
+      "numeroConta": "12345",
+      "transacoes": [
+        { "data": "2024-09-01", "descricao": "Depósito", "valor": 1000 },
+        { "data": "2024-09-02", "descricao": "Compra - Supermercado", "valor": -150 },
+        { "data": "2024-09-03", "descricao": "Transferência", "valor": -200 }
+      ]
+    },
+    {
+      "numeroConta": "67890",
+      "transacoes": [
+        { "data": "2024-09-01", "descricao": "Depósito", "valor": 500 },
+        { "data": "2024-09-03", "descricao": "Compra - Farmácia", "valor": -100 }
+      ]
+    }
+  ]
+}
