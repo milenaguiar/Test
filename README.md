@@ -6,13 +6,21 @@ Este projeto foi gerado com a versão 12.0.2 do Angular CLI.
 
 Node.js: Certifique-se de ter o Node.js instalado. Você pode baixá-lo [aqui](https://nodejs.org/pt). A versão recomendada deve ser a LTS.
 
+## Clone o repositório
+
+## Instalando as dependências 
+
+Execute npm install para instalar todas as dependências.
+
 ## Servidor de desenvolvimento
 
 Execute ng serve para um servidor de desenvolvimento. Navegue até http://localhost:4200/. O aplicativo será recarregado automaticamente se você alterar algum dos arquivos de origem.
 
-## Estrutura de código
+## 
 
-Execute ng generate component nome-do-componente para gerar um novo componente. Você também pode usar ng generate directive|pipe|service|class|guard|interface|enum|module.
+
+
+
 
 ## Compilação
 
